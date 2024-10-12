@@ -1,0 +1,21 @@
+{
+  "name": "aas-api-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "../aas-api-test/dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "generate-bundle": "npm run build && zip -r ./dist.zip ."
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "tsx": "^4.19.1",
+    "typescript": "^5.5.3"
+  },
+  "private": true,
+  "dependencies": {
+    "canvas": "^2.11.2",
+    "express": "^4.21.1"
+  }
+}
