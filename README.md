@@ -1,5 +1,3 @@
-# aas-api-test
+# Pi Visitor Counter
 
-Deployment of an (extremely) simple REST API to Azure App Service.
-
-Accessible over [this link](https://aas-api-test-f7dnbsbzccadecca.canadacentral-01.azurewebsites.net/).
+This repository hosts the code for my GitHub profile page visitor counter, which calculates a digit of pi for every visit.
