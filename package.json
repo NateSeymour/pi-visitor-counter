@@ -1,8 +1,8 @@
 {
-  "name": "aas-api-test",
+  "name": "pi-visitor-counter",
   "version": "1.0.0",
   "description": "",
-  "main": "../aas-api-test/dist/index.js",
+  "main": "./dist/index.js",
   "scripts": {
     "build": "tsc",
     "dev": "tsx src/index.ts",
