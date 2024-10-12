@@ -32,9 +32,16 @@ app.get('/pi-visitor', (req, res) => {
 
   calculationTable[0] = calculationTable[0] % 10;
 
-  const canvas = createCanvas(1000, 500, 'svg');
+  const canvas = createCanvas(1000, 500);
+  const ctx = canvas.getContext('2d');
 
-  res.send(canvas.toBuffer());
+  ctx.font = '30px Roboto';
+  ctx.fillText("This Page Calculates One Number of Pi for Every Visitor:", 10, 40, 990);
+  ctx.fillText(pi, 10, 80, 990);
+
+  res.setHeader('Content-Type', 'image/png');
+  res.setHeader('Cache-Control', 'no-cache');
+  res.send(canvas.toBuffer('image/png'));
 });
 
 app.listen(process.env.PORT || 3000);
