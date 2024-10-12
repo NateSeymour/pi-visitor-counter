@@ -35,7 +35,11 @@ app.get('/pi-visitor', (req, res) => {
   const canvas = createCanvas(1000, 500);
   const ctx = canvas.getContext('2d');
 
-  ctx.font = '30px Roboto';
+  ctx.font = '30px Courier New bold';
+  ctx.fillStyle = '#F2FDFF';
+  ctx.fill()
+
+  ctx.fillStyle = 'black';
   ctx.fillText("This Page Calculates One Number of Pi for Every Visitor:", 10, 40, 990);
   ctx.fillText(pi, 10, 80, 990);
 
